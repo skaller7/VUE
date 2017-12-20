@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>vue Demo</title>
+		<script src="https://unpkg.com/vue" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+			<span v-if="message">悬停查看</span>
+		</div>
+		<script type="text/javascript">
+			var app=new	Vue({
+				el:'#app',
+				data:{
+					message:true	
+				}
+			})
+		</script>
+	</body>
+</html>
