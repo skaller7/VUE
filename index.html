@@ -8,12 +8,18 @@
 	<body>
 		<div id="app">
 			<span v-if="message">悬停查看</span>
+			<button v-on:click="add">ADD</button>
 		</div>
 		<script type="text/javascript">
 			var app=new	Vue({
 				el:'#app',
 				data:{
 					message:true	
+				},
+				methods:{
+					add:function(){
+						this.message=false
+					}
 				}
 			})
 		</script>
